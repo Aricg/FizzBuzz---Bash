@@ -28,3 +28,24 @@ do
 
 done
 
+#more variations.
+
+#!/bin/bash
+
+for x in {1..100};
+        do
+
+if (! ((x % 3)) ) && (! ((x % 5)) ); then echo "FizzBuzz" 
+        elif (! ((x % 3)) ); then echo "fizz"
+        elif (! ((x % 5)) ); then echo "buzz"
+
+else
+        echo $x;
+fi
+
+done
+
+
+
+
+
