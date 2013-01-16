@@ -35,8 +35,10 @@ do
                                 nested "$i"
                         done
 
-if ! is_even $i ; then  echo $i 
+if $( ! is_even "$i") ; then 
+        echo $i 
 fi
+
 
 ((count++))
 done
