@@ -1,7 +1,7 @@
 FizzBuzz---Bash
 ===============
 
-FizzBuzz implemented in Bash /n
+FizzBuzz implemented in Bash 
 
 Solutions to common programming exercises in BASH
 
