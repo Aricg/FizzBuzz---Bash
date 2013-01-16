@@ -14,7 +14,7 @@ let a=$(( a + b ))
 let b=$(( a + b ))
 }
 
-is_even()  {
+is_even()  { 
 (! (( "$@" % 2 )) );
 }
 
@@ -34,6 +34,9 @@ do
                         do
                                 nested "$i"
                         done
+
+if ! is_even $i ; then  echo $i 
+fi
 
 ((count++))
 done
