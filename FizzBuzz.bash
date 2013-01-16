@@ -50,7 +50,7 @@ done
 #!/bin/bash
 
 x=0
-fizzbuzz() {(! (( x % 3 )) ) && (! ((x % 5)) ) && echo "fizzbuzz";}
+fizzbuzz() { (! (( x % 3 )) ) && (! ((x % 5)) ) && echo "fizzbuzz"; }
 fizz()  { (! (( $x % 3 )) ) && echo "fizz"; }
 buzz()  { (! (( $x % 5 )) ) && echo "buzz"; }
 
