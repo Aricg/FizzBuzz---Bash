@@ -46,3 +46,22 @@ fi
 done
 
 
+#Done up with functions. 
+#!/bin/bash
+
+x=0
+fizzbuzz() {(! (( x % 3 )) ) && (! ((x % 5)) ) && echo "fizzbuzz";}
+fizz()  { (! (( $x % 3 )) ) && echo "fizz"; }
+buzz()  { (! (( $x % 5 )) ) && echo "buzz"; }
+
+
+while ((x < 101 ))
+do
+
+fizzbuzz $x || fizz $x || buzz $x || echo $x
+
+((x++))
+done
+
+
+
