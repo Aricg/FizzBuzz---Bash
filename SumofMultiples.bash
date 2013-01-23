@@ -10,10 +10,10 @@ fizz()  { (! (( $x % 3 )) ); }
 buzz()  { (! (( $x % 5 )) ); } 
 
 sum()   { 
-        printf "%s\n" " $num +" 
+        printf " $num +" 
                 ((x + num));
                 num=$(( x + num ))
-        printf "%s\n"  " $x ="
+        printf " $x ="
 }
 
 
