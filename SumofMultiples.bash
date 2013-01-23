@@ -10,10 +10,10 @@ fizz()  { (! (( $x % 3 )) ); }
 buzz()  { (! (( $x % 5 )) ); } 
 
 sum()   { 
-        echo -n " $num +" 
+        printf "%s\n" " $num +" 
                 ((x + num));
                 num=$(( x + num ))
-        echo -n  " $x ="
+        printf "%s\n"  " $x ="
 }
 
 
