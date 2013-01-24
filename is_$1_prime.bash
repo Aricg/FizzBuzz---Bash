@@ -6,8 +6,8 @@ number_of_divisors=0
 iteration=1
 
 is_whole()  {
-
-(( "10#$@" == 0 ));
+remainder="${@##*.}";
+(( "10#$remainder" == 0 ));
 }
 
 maths (){
@@ -20,10 +20,7 @@ do
 
 maths "$number" "$iteration"
 
-#get remainder
-remainder="${result##*.}";
-
-if is_whole "$remainder"; then
+if is_whole "$result"; then
         echo  "$number" / "$iteration" =  "$result" which is a whole number  
         let number_of_divisors="$(( number_of_divisors + 1 ))"
 
