@@ -13,6 +13,8 @@ remainder="${@##*.}";
 maths (){
 
 result="$(bc <<< "scale=4; $number / $iteration")"
+#dc (lighter than bc, still slow tho...)
+#result="$(dc <<< "4k $number $iteration / p")"
 }
 
 while ((iteration < $1))
