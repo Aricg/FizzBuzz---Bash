@@ -39,7 +39,5 @@ if $( ! is_even "$i") ; then
         echo $i 
 fi
 
-
-((count++))
 done
         echo Final Value is "$final_value"
