@@ -63,5 +63,14 @@ fizzbuzz $x || fizz $x || buzz $x || echo $x
 ((x++))
 done
 
+#Stole this from rosetta code becasue it's cool
+# FizzBuzz in Bash.  A concise version, but with verbose comments.
 
-
+for i in {1..100} 
+do  ((i % 3)) &&  
+        x= ||     
+        x=Fizz   
+    ((i % 5)) ||  # If i is not divisible by 5, skip (there's no "&&")...
+        x+=Buzz   # append "Buzz" to x.
+   echo ${x:-$i}  # Print x unless it is blanked out.  Otherwise, print i.
+done 
